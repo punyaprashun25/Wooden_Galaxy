@@ -10,7 +10,7 @@ const Form = () => {
     };
     return (
         <>
-            <div className="form-box w100% flex gap-[0.625rem] px-[4.625rem] py-[3.25rem]  bg-[#E5E5E5]">
+            <div className="form-box w100% flex gap-[0.625rem] px-[4.625rem] max-sm:px-5 py-[3.25rem]  bg-[#E5E5E5]">
                 <form action="#" className="flex flex-1 flex-wrap gap-[1.625rem] ">
                     <div className="left w-[602px] flex flex-col  gap-[36px] px-[74px] py-[35px] ">
                         <div className="heading-text font-semibold text-[36px]">
@@ -62,7 +62,7 @@ const Form = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="right flex flex-col flex-1 py-[70px] gap-[1.5rem]">
+                    <div className="right flex flex-col flex-1 max-sm:px-10 py-[70px] gap-[1.5rem]">
                         <div className="heading-box flex justify-between ">
                             <h2 className="heading font-medium text-[1.5rem]">Product</h2>
                             <h2 className="heading font-medium text-2xl">Subtotal </h2>
