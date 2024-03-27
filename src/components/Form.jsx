@@ -10,23 +10,23 @@ const Form = () => {
     };
     return (
         <>
-            <form action="#" className="flex w-full  flex-col bg-[#E5E5E5] px-8 py-4 gap-5">
-                <div className="left flex flex-col gap-6">
+            <form action="#" className="flex w-full  flex-col lg:flex-row  px-8 py-4 gap-5 lg:px-12 lg:py-8 md:px-10 md:pt-12">
+                <div className="left flex flex-col min-w-[45%] gap-6">
                     <div className="heading-text text-[1.75rem] font-semibold text-center ">
                         Billing Details
                     </div>
-                    <div className="name-box flex flex-wrap w-full justify-between">
+                    <div className="name-box flex flex-col w-full justify-between">
                         <div className="input-box flex flex-col gap-2">
                             <label htmlFor="Fname" className='font-medium'>
                                 First Name
                             </label>
-                            <input type="text" id='Fname' className="w-40 h-8 rounded-md bg-transparent border border-[#9F9F9F] px-2" />
+                            <input type="text" id='Fname' className="w-44 h-10 rounded-md bg-transparent border border-[#9F9F9F] px-2" />
                         </div>
                         <div className="input-box flex flex-col gap-2">
                             <label htmlFor="Lname" className='font-medium'>
                                 Last Name
                             </label>
-                            <input type="text" id='Lname' className="w-40 h-8 rounded-md bg-transparent border border-[#9F9F9F] px-2" />
+                            <input type="text" id='Lname' className="w-44 h-10 rounded-md bg-transparent border border-[#9F9F9F] px-2" />
                         </div>
                     </div>
                     <div className="company-box">
@@ -34,7 +34,7 @@ const Form = () => {
                             <label htmlFor="company" className='font-medium'>
                                 Company Name (Optional)
                             </label>
-                            <input type="text" id='company' className="w-full h-10 rounded-md border border-[#9F9F9F] bg-transparent px-2" />
+                            <input type="text" id='company' className="w-full max-w-80 h-10 rounded-md border border-[#9F9F9F] bg-transparent px-2" />
                         </div>
                     </div>
                     <div className="country-box ">
@@ -42,7 +42,7 @@ const Form = () => {
                             <label htmlFor="region" className='font-medium'>
                                 Country / Region
                             </label>
-                            <select type="text" id='region' className="w-full h-10 rounded-md border border-[#9F9F9F] bg-transparent px-2" >
+                            <select type="text" id='region' className="w-full max-w-80 h-10 rounded-md border border-[#9F9F9F] bg-transparent px-2" >
                                 <option value="Sri Lanka" className=''>Sri Lanka</option>
                             </select>
                         </div>
@@ -52,11 +52,11 @@ const Form = () => {
                             <label htmlFor="address" className='font-medium'>
                                 Street Address
                             </label>
-                            <input type="text" id='address' className="w-full h-10 rounded-md border border-[#9F9F9F] bg-transparent px-2" />
+                            <input type="text" id='address' className="w-full max-w-80 h-10 rounded-md border border-[#9F9F9F] bg-transparent px-2" />
                         </div>
                     </div>
                 </div>
-                <div className="right flex flex-col gap-2">
+                <div className="right flex min-w-[45%] flex-col gap-2 lg:mt-10">
                     <div className="heading-box flex justify-between">
                         <h2 className="heading font-medium text-[1.25rem]">Product</h2>
                         <h2 className="heading font-medium text-[1.25rem]">Subtotal </h2>
@@ -119,12 +119,12 @@ const Form = () => {
 
                         }
                         <div className="methods flex flex-col gap-3">
-                            <div className="payment-input-box flex gap-3">
-                                <input className="" type="radio" name="payment-method" id="bank-transfer" />
+                            <div className="payment-input-box flex items-center gap-3">
+                                <input className="h-[14px] w-[14px]" type="radio" name="payment-method" id="bank-transfer" />
                                 <label htmlFor="bank-transfer" className="font-medium text-base text-[#9F9F9F]" onClick={bankHandler}>Direct Bank Transfer</label>
                             </div>
-                            <div className="payment-input-box flex gap-3">
-                                <input className="h" type="radio" name="payment-method" id="cod" />
+                            <div className="payment-input-box flex items-center gap-3">
+                                <input className="h-[14px] w-[14px]" type="radio" name="payment-method" id="cod" />
                                 <label htmlFor="cod" className="font-medium text-base text-[#9F9F9F]" onClick={cashHandler}>Cash On Delivery</label>
                             </div>
                             <div className="notice-box ">
