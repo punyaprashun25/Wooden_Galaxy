@@ -27,9 +27,9 @@ html{
     font-size : 20px;
   }
 }
-@media (min-width : 1024px)
+/* @media (min-width : 1024px)
 {
   html{
     font-size : 22px;
   }
-}
+} */
